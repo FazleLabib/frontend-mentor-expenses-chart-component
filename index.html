@@ -3,41 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  My balance
-  $921.48
+  <main>
+    <div class="container">
 
-  Spending - Last 7 days
+      <div class="container-item" id="balance">
+        <div class="text">
+          <p id="balance-header">My balance</p>
+          <h2 id="total-balance">$921.48</h2>
+        </div>
+        <img src="./images/logo.svg" alt="Icons of one circle with no fill and another with fill intersacting with one another.">
+      </div>
+    
+      <div class="container-item" id="chart">
+        <div class="chart-item">
+          <h2  id="chart-header">Spending - Last 7 days</h2>
+        </div>
+    
+        <div class="chart-item" id="days">
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+          <div class="day-bar">
+            <div class="spending" id="mon-spending"><p>$17.45</p></div>
+            <div class="bar" id="mon-bar"></div>
+            <p>mon</p>
+          </div>
 
-  Total this month
-  $478.33
+          <div class="day-bar">
+            <div class="spending" id="tue-spending"><p>$34.91</p></div>
+            <div class="bar" id="tue-bar"></div>
+            <p>tue</p>
+          </div>
 
-  +2.4%
-  from last month
+          <div class="day-bar">
+            <div class="spending" id="wed-spending"><p>$52.36</p></div>
+            <div class="bar" id="wed-bar"></div>
+            <p>wed</p>
+          </div>
+
+          <div class="day-bar">
+            <div class="spending" id="thu-spending"><p>$31.07</p></div>
+            <div class="bar" id="thu-bar"></div>
+            <p>thu</p>
+          </div>
+
+          <div class="day-bar">
+            <div class="spending" id="fri-spending"><p>$23.39</p></div>
+            <div class="bar" id="fri-bar"></div>
+            <p>fri</p>
+          </div>
+
+          <div class="day-bar">
+            <div class="spending" id="sat-spending"><p>$43.28</p></div>
+            <div class="bar" id="sat-bar"></div>
+            <p>sat</p>
+          </div>
+
+          <div class="day-bar">
+            <div class="spending" id="sun-spending"><p>$25.48</p></div>
+            <div class="bar" id="sun-bar"></div>
+            <p>sun</p>
+          </div>
+
+        </div>
+
+        <div class="chart-item" id="divider"></div>
+
+        <div class="chart-item" id="num-stats">
+
+          <div id="month-total">
+            <p id="month-total-header">Total this month</p>
+            <h1 id="month-total-amount">$478.33</h1>
+          </div>
+
+          <div id="last-month">
+            <p id="increase">+2.4%</p>
+            <p id="last-month-header">from last month</p>
+          </div>
+        
+        </div>
+
+      </div>
+      
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/FazleLabib">Fazle Labib</a>.
+    </div>
+  </footer>
 </body>
 </html>
