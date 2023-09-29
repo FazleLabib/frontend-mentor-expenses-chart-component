@@ -99,10 +99,15 @@ h2 {
     gap: 1rem;
 }
 
+#chart-header {
+    justify-content: flex-start;
+}
+
 #days {
     padding-top: 0.5rem;
     padding-bottom: 1.5rem;
     align-items: last baseline;
+    height: 13.35rem;
 }
 
 .day-bar {
@@ -142,8 +147,9 @@ h2 {
     background-color: var(--soft-red);
     border-radius: 0.25rem;
     width: 3.25rem;
-    height: 9rem;
+    height: 0;
     transition: opacity 0.2s ease-in;
+    transition: height 1s ease-in-out;
 }
 
 .bar:hover {
@@ -198,6 +204,18 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
+    p {
+        font-size: 0.85rem;
+    }
+    
+    h2 {
+        font-size: 1.65rem;
+    }
+    
+    #month-total-amount {
+        font-size: 2rem;
+    }
 
     .container {
         gap: 1rem;
