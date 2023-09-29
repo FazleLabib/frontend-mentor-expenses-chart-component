@@ -114,12 +114,12 @@ h2 {
     gap: 0.25rem;
 }
 
-.day-bar:hover .spending {
+.day-bar:hover .spendings {
     display: flex;
     opacity: 1;
 }
 
-.spending {
+.spendings {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@ h2 {
     transition: opacity 0.3s ease-in;
 }
 
-.spending p {
+.spendings p {
     color: var(--very-pale-orange);
     font-weight: 700;
 }
@@ -170,6 +170,11 @@ h2 {
     align-items:end;
 }
 
+#month-total {
+    display: flex;
+    flex-direction: column;
+}
+
 #last-month {
     display: flex;
     flex-direction: column;
@@ -184,8 +189,46 @@ footer {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color: var(--medium-brown);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    font-weight: 700;
+    color: var(--dark-brown); 
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        gap: 1rem;
+    }
+
+    .container-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .chart-item {
+        display: flex;
+        justify-content: center;
+        gap: 0.65rem;
+    }
+
+    .day-bar {
+        width: 2.5rem;
+        gap: 0.25rem;
+    }
+    
+    .spendings {
+        width: 3rem;
+        padding: 0.45rem 0.35rem;
+    }
+
+    .bar {
+        width: 2.5rem;
+    }
+
+    #num-stats {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
 }
